@@ -57,7 +57,7 @@ const generateTools = [
     id: "motion-lipsync",
     title: "Motion Lipsync",
     subtitle: "NEW",
-    description: "Lip sync any video to any audio.",
+    description: "Try out this feature now. Lip sync any video to any audio.",
     icon: Mic,
     color: "text-cyan-500",
     bgColor: "bg-cyan-500/10",
@@ -96,25 +96,25 @@ export function GenerateSection() {
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-3 w-full">
           {generateTools.map((tool) => {
             const IconComponent = tool.icon
             return (
               <Card
                 key={tool.id}
-                className={`p-6 hover:shadow-xl transition-all duration-300 group cursor-pointer border-2 ${tool.borderColor} hover:border-primary/50 bg-card/50 backdrop-blur-sm hover:scale-105 h-32`}
+                className={`p-6 lg:p-2 hover:shadow-xl transition-all duration-300 group cursor-pointer border-2 ${tool.borderColor} hover:border-primary/50 bg-card/50 backdrop-blur-sm hover:scale-105 h-32 lg:h-29 w-75`}
               >
                 <div className="flex items-center h-full gap-4">
                   <div
                     className={`p-4 rounded-xl ${tool.bgColor} group-hover:scale-110 transition-transform duration-300 flex-shrink-0`}
                   >
-                    <IconComponent className={`h-8 w-8 ${tool.color}`} />
+                    <IconComponent className={`h-10 w-8 ${tool.color}`} />
                   </div>
 
-                  {/* Content area on the right */}
+                
                   <div className="flex-1 flex flex-col justify-between h-full py-1">
-                    {/* Title and NEW badge at the top */}
-                    <div className="flex items-center gap-2 mb-2">
+                  
+                    <div className="flex items-center gap-2 mb-0">
                       <h3 className="font-semibold text-base tracking-tight">{tool.title}</h3>
                       {tool.subtitle && (
                         <span className="text-xs bg-blue-600 dark:bg-blue-500 text-white px-2 py-0.5 rounded-full font-medium">
@@ -123,13 +123,13 @@ export function GenerateSection() {
                       )}
                     </div>
 
-                    {/* Description and Button at the bottom */}
-                    <div className="flex items-end justify-between gap-4">
-                      <p className="text-sm text-muted-foreground leading-relaxed flex-1">{tool.description}</p>
+            
+                    <div className="flex items-end justify-between gap-2">
+                      <p className="text-xs text-muted-foreground leading-relaxed flex-1">{tool.description}</p>
                       <Button
                         size="sm"
                         variant="outline"
-                        className="text-sm h-9 group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all duration-200 bg-transparent font-medium flex-shrink-0"
+                        className="text-xs h-7 group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all duration-200 bg-transparent font-medium flex-shrink-0"
                       >
                         Open
                       </Button>

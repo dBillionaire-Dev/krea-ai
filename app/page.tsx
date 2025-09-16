@@ -17,7 +17,9 @@ export default function HomePage() {
 
         {/* Generate Section */}
         <GenerateSection />
-
+        
+        {/* Gallery Section */}
+                    
         <section className="py-20 border-t border-border/40">
           <div className="container mx-auto px-6">
             <div className="flex items-center justify-between mb-10">
@@ -29,19 +31,54 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
-              {Array.from({ length: 12 }).map((_, i) => (
-                <div
-                  key={i}
-                  className="aspect-square rounded-2xl bg-muted hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden group border border-border/40 hover:border-primary/30"
-                >
-                  <img
-                    src={`/ai-generated-artwork-.jpg?height=300&width=300&query=AI generated artwork ${i + 1}`}
-                    alt={`Gallery item ${i + 1}`}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
-              ))}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+              <div className="aspect-square rounded-2xl bg-muted hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden group border border-border/40 hover:border-primary/30">
+                <img
+                  src="/cyberpunk-cityscape-neon.png"
+                  alt="Cyberpunk cityscape"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+
+              <div className="aspect-square rounded-2xl bg-muted hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden group border border-border/40 hover:border-primary/30">
+                <img
+                  src="/abstract-digital-art-with-flowing-colors.jpg"
+                  alt="Abstract digital art"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+
+              <div className="aspect-square rounded-2xl bg-muted hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden group border border-border/40 hover:border-primary/30">
+                <img
+                  src="/ai-generated-portrait-of-a-person-with-artistic-st.jpg"
+                  alt="AI portrait"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+
+              <div className="aspect-square rounded-2xl bg-muted hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden group border border-border/40 hover:border-primary/30">
+                <img
+                  src="/floating-islands-surreal.png"
+                  alt="Surreal landscape"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+
+              <div className="aspect-square rounded-2xl bg-muted hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden group border border-border/40 hover:border-primary/30">
+                <img
+                  src="/geometric-patterns-with-vibrant-colors.jpg"
+                  alt="Geometric patterns"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+
+              <div className="aspect-square rounded-2xl bg-muted hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden group border border-border/40 hover:border-primary/30">
+                <img
+                  src="/fantasy-creature-in-magical-forest.jpg"
+                  alt="Fantasy creature"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
             </div>
           </div>
         </section>
