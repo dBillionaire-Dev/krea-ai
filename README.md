@@ -7,7 +7,7 @@
 
 ## 🚀 Overview
 
-Krea-AI is a modern, AI-powered web application built with **Next.js** and **TypeScript**. It provides a clean, responsive interface for interacting with creative AI features — making it easy to generate, edit, and visualize content. The project is structured for scalability and rapid development, with best practices in typing, styling, and deployment.
+Krea-AI is a modern, AI-powered web application built with **Next.js** and **TypeScript**. It provides a clean, responsive interface for interacting with creative AI features, making it easy to generate, edit, and visualize content. The project is structured for scalability and rapid development, with best practices in typing, styling, and deployment.
 
 ---
 
