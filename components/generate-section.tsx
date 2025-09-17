@@ -102,13 +102,13 @@ export function GenerateSection() {
             return (
               <Card
                 key={tool.id}
-                className={`p-6 lg:p-2 hover:shadow-xl transition-all duration-300 group cursor-pointer border-2 ${tool.borderColor} hover:border-primary/50 bg-card/50 backdrop-blur-sm hover:scale-105 h-32 lg:h-29 w-75`}
+                className={`p-4 lg:p-2 hover:shadow-xl transition-all duration-300 group cursor-pointer border-2 ${tool.borderColor} hover:border-primary/50 bg-card/50 backdrop-blur-sm hover:scale-105 h-32 lg:h-29 w-78 md:w-75`}
               >
                 <div className="flex items-center h-full gap-4">
                   <div
-                    className={`p-4 rounded-xl ${tool.bgColor} group-hover:scale-110 transition-transform duration-300 flex-shrink-0`}
+                    className={`p-2 rounded-xl ${tool.bgColor} group-hover:scale-110 transition-transform duration-300 flex-shrink-0`}
                   >
-                    <IconComponent className={`h-10 w-8 ${tool.color}`} />
+                    <IconComponent className={`h-8 w-8 md:h-10 md:w-8 ${tool.color}`} />
                   </div>
 
                 
@@ -117,7 +117,7 @@ export function GenerateSection() {
                     <div className="flex items-center gap-2 mb-0">
                       <h3 className="font-semibold text-base tracking-tight">{tool.title}</h3>
                       {tool.subtitle && (
-                        <span className="text-xs bg-blue-600 dark:bg-blue-500 text-white px-2 py-0.5 rounded-full font-medium">
+                        <span className="text-xs bg-blue-600 dark:bg-blue-500 text-white px-0.5 md:px-2 py-0.5 rounded-full font-medium">
                           {tool.subtitle}
                         </span>
                       )}

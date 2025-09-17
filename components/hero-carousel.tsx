@@ -46,7 +46,7 @@ export function HeroCarousel() {
   }
 
   return (
-    <div className="relative w-full h-[420px] overflow-hidden rounded-3xl shadow-2xl">
+    <div className="relative w-full h-[660px] md:h-[420px] overflow-hidden rounded-3xl shadow-2xl">
       <div
         className="flex transition-transform duration-700 ease-in-out h-full"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}

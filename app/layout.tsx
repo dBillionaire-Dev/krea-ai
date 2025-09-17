@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
@@ -37,13 +37,25 @@ export const metadata: Metadata = {
   creator: "Nex.Dev",
   generator: "Next.js",
   applicationName: "Krea AI Clone",
-  viewport: "width=device-width, initial-scale=1",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
     shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    apple: [
+      { url: "/apple-touch-icon.png" },
+      { url: "/android-chrome-192x192.png", sizes: "192x192" },
+      { url: "/android-chrome-512x512.png", sizes: "512x512" },
+    ],
   },
 }
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export default function RootLayout({
   children,

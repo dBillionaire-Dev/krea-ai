@@ -31,7 +31,7 @@ export function Navbar() {
             <div className="h-8 w-8 rounded-lg bg-slate-900 dark:bg-slate-100 flex items-center justify-center">
               <span className="text-white dark:text-slate-900 font-bold text-sm">⚡</span>
             </div>
-            <span className="font-semibold text-lg tracking-tight">personalcontentcreator</span>
+            <span className="font-semibold text-lg tracking-tight">Krea</span>
           </div>
 
           <div className="hidden md:flex items-center space-x-1">
