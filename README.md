@@ -1,30 +1,41 @@
-# Job-Application
+# Krea-AI
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+[![Vercel](https://vercel.com/button)](https://my-krea-ai.vercel.app)  
+[**Live Demo**](https://my-krea-ai.vercel.app)
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/nezers-projects-80e1b4fd/v0-job-application)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/8VIwul4eidK)
+---
 
-## Overview
+## 🚀 Overview
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+Krea-AI is a modern, AI-powered web application built with **Next.js** and **TypeScript**. It provides a clean, responsive interface for interacting with creative AI features, making it easy to generate, edit, and visualize content. The project is structured for scalability and rapid development, with best practices in typing, styling, and deployment.
 
-## Deployment
+---
 
-Your project is live at:
+## 🔍 Features
 
-**[https://vercel.com/nezers-projects-80e1b4fd/v0-job-application](https://vercel.com/nezers-projects-80e1b4fd/v0-job-application)**
+- 🧰 **Modern Stack** — Next.js 14, React, and TypeScript for a smooth developer experience  
+- 🎨 **Responsive Design** — Styled with Tailwind CSS (or preferred utility-first CSS)  
+- ✅ **Type Safety** — Strong typing reduces bugs and improves maintainability  
+- ⚡ **Fast Development** — Hot-reloading, clean folder structure, and reusable components  
+- 🌍 **Ready to Deploy** — Integrated with Vercel for frictionless deployment  
+- 🔗 **Extensible** — Easily add new AI models, routes, or UI components  
 
-## Build your app
+---
 
-Continue building your app on:
+## 🛠 Getting Started
 
-**[https://v0.app/chat/projects/8VIwul4eidK](https://v0.app/chat/projects/8VIwul4eidK)**
+Run this project locally in a few steps:
 
-## How It Works
+```bash
+# 1. Clone the repo
+git clone https://github.com/dBillionaire-Dev/krea-ai.git
+cd krea-ai
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+# 2. Install dependencies (choose npm, yarn, or pnpm)
+npm install
+
+# 3. Start the development server
+npm run dev
+
+# 4. Open your browser
+http://localhost:3000
