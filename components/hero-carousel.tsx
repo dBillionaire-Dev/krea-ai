@@ -46,7 +46,7 @@ export function HeroCarousel() {
   }
 
   return (
-    <div className="relative w-full h-[660px] md:h-[420px] overflow-hidden rounded-3xl shadow-2xl">
+    <div className="relative w-full md:h-[420px] overflow-hidden rounded-3xl shadow-2xl">
       <div
         className="flex transition-transform duration-700 ease-in-out h-full"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -58,7 +58,7 @@ export function HeroCarousel() {
             <div className="absolute inset-0 bg-black/50" />
 
             <div className="relative h-full flex items-center">
-              <div className="container mx-auto px-8">
+              <div className="container mx-auto py-2 px-8">
                 <div className="max-w-2xl text-white">
                   <div className="text-sm font-semibold text-white/90 mb-3 uppercase tracking-wider">
                     {slide.subtitle}
@@ -82,7 +82,7 @@ export function HeroCarousel() {
       <Button
         variant="ghost"
         size="sm"
-        className="absolute left-6 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-black/30 hover:bg-black/50 text-white border-0 backdrop-blur-sm"
+        className="absolute left-6 top-3/7 md:top-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-black/30 hover:bg-black/50 text-white border-0 backdrop-blur-sm"
         onClick={prevSlide}
       >
         <ChevronLeft className="h-6 w-6" />
@@ -90,7 +90,7 @@ export function HeroCarousel() {
       <Button
         variant="ghost"
         size="sm"
-        className="absolute right-6 top-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-black/30 hover:bg-black/50 text-white border-0 backdrop-blur-sm"
+        className="absolute right-6 top-3/7 md:top-1/2 -translate-y-1/2 h-12 w-12 rounded-full bg-black/30 hover:bg-black/50 text-white border-0 backdrop-blur-sm"
         onClick={nextSlide}
       >
         <ChevronRight className="h-6 w-6" />
